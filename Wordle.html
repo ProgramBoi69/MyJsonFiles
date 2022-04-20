@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Wordle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Wordle.js"> </script>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <center>
+                <p title="wordle">Wordle</p>
+            </center>
+        </nav>
+        <section>
+            <center>
+                <div class="alert-container">
+                    <p id="alertWord"></p>
+                </div>
+                <div class="guessContainer">
+                    <div class="guessRowOne">
+                        <div class="colOneGuess"><p id="outputOne"></p></div>
+                        <div class="colTwoGuess"><p id="outputTwo"></p></div>
+                        <div class="colThreeGuess"><p id="outputThree"></p></div>
+                        <div class="colFourGuess"><p id="outputFour"></p></div>
+                        <div class="colFiveGuess"><p id="outputFive"></p></div>
+                    </div>
+                    <div class="guessRowTwo">
+                        <div class="colOneGuessTwo"><p id="outputSix"></p></div>
+                        <div class="colTwoGuessTwo"><p id="outputSeven"></p></div>
+                        <div class="colThreeGuessTwo"><p id="outputEight"></p></div>
+                        <div class="colFourGuessTwo"><p id="outputNine"></p></div>
+                        <div class="colFiveGuessTwo"><p id="outputTen"></p></div>
+                    </div>
+                    <div class="guessRowThree">
+                        <div class="colOneGuessThree"><p id="outputEleven"></p></div>
+                        <div class="colTwoGuessThree"><p id="outputTwelve"></p></div>
+                        <div class="colThreeGuessThree"><p id="outputThirteen"></p></div>
+                        <div class="colFourGuessThree"><p id="outputFourteen"></p></div>
+                        <div class="colFiveGuessThree"><p id="outputFifteen"></p></div>
+                    </div>
+                    <div class="guessRowFour">
+                        <div class="colOneGuessFour"><p id="outputSixteen"></p></div>
+                        <div class="colTwoGuessFour"><p id="outputSeventeen"></p></div>
+                        <div class="colThreeGuessFour"><p id="outputEighteen"></p></div>
+                        <div class="colFourGuessFour"><p id="outputNineteen"></p></div>
+                        <div class="colFiveGuessFour"><p id="outputTwenty"></p></div>
+                    </div>
+                    <div class="guessRowFive">
+                        <div class="colOneGuessFive"><p id="outputTwentyOne"></p></div>
+                        <div class="colTwoGuessFive"><p id="outputTwentyTwo"></p></div>
+                        <div class="colThreeGuessFive"><p id="outputTwentyThree"></p></div>
+                        <div class="colFourGuessFive"><p id="outputTwentyFour"></p></div>
+                        <div class="colFiveGuessFive"><p id="outputTwentyFive"></p></div>
+                    </div>
+                    <div class="guessRowSix">
+                        <div class="colOneGuessSix"><p id="outputTwentySix"></p></div>
+                        <div class="colTwoGuessSix"><p id="outputTwentySeven"></p></div>
+                        <div class="colThreeGuessSix"><p id="outputTwentyEight"></p></div>
+                        <div class="colFourGuessSix"><p id="outputTwentyNine"></p></div>
+                        <div class="colFiveGuessSix"><p id="outputThirty"></p></div>
+                    </div>
+                </div>
+            </center>
+            <center>
+                <div class="keyboard">
+                    <div class="qRow">
+                        <div class="keyQ"><p id="Q">Q</p></div>
+                        <div class="keyW"><p id="W">W</p></div>
+                        <div class="keyE"><p id="E">E</p></div>
+                        <div class="keyR"><p id="R">R</p></div>
+                        <div class="keyT"><p id="T">T</p></div>
+                        <div class="keyY"><p id="Y">Y</p></div>
+                        <div class="keyU"><p id="U">U</p></div>
+                        <div class="keyI"><p id="I">I</p></div>
+                        <div class="keyO"><p id="O">O</p></div>
+                        <div class="keyP"><p id="P">P</p></div>
+                    </div>
+                    <div class="aRow">
+                        <div class="keyA"><p id="A">A</p></div>
+                        <div class="keyS"><p id="S">S</p></div>
+                        <div class="keyD"><p id="D">D</p></div>
+                        <div class="keyF"><p id="F">F</p></div>
+                        <div class="keyG"><p id="G">G</p></div>
+                        <div class="keyH"><p id="H">H</p></div>
+                        <div class="keyJ"><p id="J">J</p></div>
+                        <div class="keyK"><p id="K">K</p></div>
+                        <div class="keyL"><p id="L">L</p></div>
+                    </div>  
+                    <div class="enterRow">
+                        <div class="keyEnter"><p id="ENTER">ENTER</p></div>
+                        <div class="keyZ"><p id="Z">Z</p></div>
+                        <div class="keyX"><p id="X">X</p></div>
+                        <div class="keyC"><p id="C">C</p></div>
+                        <div class="keyV"><p id="V">V</p></div>
+                        <div class="keyB"><p id="B">B</p></div>
+                        <div class="keyN"><p id="N">N</p></div>
+                        <div class="keyM"><p id="M">M</p></div>
+                        <div class="keyBack"><i class="material-icons" style="position:relative; right:1px; top:13px; font-size:1.6em;"id="BACK">&#xe14a;</i></div>
+                    </div>
+                </div>
+            </center>
+        </section>
+    </div>
+</body>
+</html>

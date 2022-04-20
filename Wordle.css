@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400&display=swap');
+*{
+    font-family:sans-serif;
+}
+.main{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+nav{
+    width:100%;
+    height:36px;
+    border-bottom:0.5px solid rgba(0,0,0,0.3);
+}
+[title="wordle"]{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bolder;
+    font-size:2rem;
+    position:relative;
+    bottom:40px;
+    display:inline-block;
+}
+.guessContainer{
+    position:relative;
+    top:125px;
+    width:400px;
+    height:500px;
+}
+.guessRowOne,.guessRowTwo,.guessRowThree,.guessRowFour,.guessRowFive,.guessRowSix{
+    position:relative;
+    top:10px;
+}
+/*colOne Properties*/
+.colOneGuess{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+
+.colTwoGuess{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuess{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuess{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuess{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*colTwo Properties*/
+.colOneGuessTwo{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+.colTwoGuessTwo{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuessTwo{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuessTwo{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuessTwo{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*colThree Properties*/
+.colOneGuessThree{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+.colTwoGuessThree{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuessThree{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuessThree{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuessThree{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*colFour Properties*/
+.colOneGuessFour{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+.colTwoGuessFour{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuessFour{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuessFour{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuessFour{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*colFive Properties*/
+.colOneGuessFive{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+.colTwoGuessFive{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuessFive{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuessFive{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuessFive{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*colSix Properties*/
+.colOneGuessSix{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+.colTwoGuessSix{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+.colThreeGuessSix{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+.colFourGuessSix{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+.colFiveGuessSix{
+    border:2px solid #d3d6da;
+    height:60px;
+    width: 60px;
+    display:inline-block;
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*Keyboard CSS Properties*/
+.keyboard{
+    position:relative;
+    top:170px;
+    width:500px;
+    height:200px;
+}
+.keyQ,.keyW,.keyE,.keyR,.keyT,.keyY,.keyU,.keyI,.keyO,.keyP{
+    display:inline-block;
+    border-radius:4px;
+    width:44px;
+    height:55px;
+    background-color:#d3d6da;
+}
+.keyA,.keyS,.keyD,.keyF,.keyG,.keyH,.keyJ,.keyK,.keyL{
+    position:relative;
+    top:3px;
+    display:inline-block;
+    border-radius:4px;
+    width:44px;
+    height:55px;
+    background-color:#d3d6da;
+}
+.keyEnter,.keyBack{
+    position:relative;
+    top:6px;
+    display:inline-block;
+    border-radius:4px;
+    width:70px;
+    height:55px;
+    background-color:#d3d6da;
+}
+.keyZ,.keyX,.keyC,.keyV,.keyB,.keyN,.keyM{
+    position:relative;
+    top:6px;
+    display:inline-block;
+    border-radius:4px;
+    width:44px;
+    height:55px;
+    background-color:#d3d6da;
+}
+.keyboard .qRow div p{
+    position:relative;
+    top:5px;
+    font-size:0.8em;
+    font-weight:bold;
+}
+.keyboard .aRow div p{
+    position:relative;
+    top:5px;
+    font-size:0.8em;
+    font-weight:bold;
+}
+.keyboard .enterRow div p{
+    position:relative;
+    top:5px;
+    font-size:0.8em;
+    font-weight:bold;
+}
+.guessRowOne div p{
+    position:relative;
+    bottom:20px;
+    font-size:2.035em;
+    font-weight:bold;
+    transform:rotate(0deg);
+}
+.guessRowTwo div p{
+    position:relative;
+    bottom:20px;
+    font-size:2.038em;
+    font-weight:bold;
+}
+.guessRowThree div p{
+    position:relative;
+    bottom:21px;
+    font-size:2.1em;
+    font-weight:bold;
+}
+.guessRowFour div p{
+    position:relative;
+    bottom:20px;
+    font-size:2.0369em;
+    font-weight:bold;
+}
+.guessRowFive div p{
+    position:relative;
+    bottom:20px;
+    font-size:2.0369em;
+    font-weight:bold;
+}
+.guessRowSix div p{
+    position:relative;
+    bottom:20px;
+    font-size:2.0369em;
+    font-weight:bold;
+}
+/*output 1 properties*/
+#outputOne{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputTwo{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputThree{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputFour{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputFive{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*outputs 2*/
+#outputSix{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputSeven{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputEight{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputNine{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputTen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*outputs 3*/
+#outputEleven{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputTwelve{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputThirteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputFourteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputFifteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*outputs 4*/
+#outputSixteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputSeventeen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputEighteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputNineteen{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputTwenty{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*outputs 5*/
+#outputTwentyOne{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputTwentyTwo{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputTwentyThree{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputTwentyFour{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputTwentyFive{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*outputs 6*/
+#outputTwentySix{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.2s;
+}
+#outputTwentySeven{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.4s;
+}
+#outputTwentyEight{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.6s;
+}
+#outputTwentyNine{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:0.8s;
+}
+#outputThirty{
+    transform:rotateX(0deg);
+    transition-duration:1s;
+    transition-delay:1s;
+}
+/*alert properties*/
+.alert-container{
+    position:relative;
+    top:75px;
+    display:inline-block;
+    height:50px;
+    width:200px;
+    background-color:black;
+    border-radius:5px;
+    opacity:0;
+}
+#alertWord
+{
+    position:relative;
+    color:white;
+    font-size:1em;
+    font-weight:bold;
+}
+/*key configs*/
